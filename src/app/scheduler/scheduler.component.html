@@ -1,0 +1,35 @@
+<!--CODED BY Salvatore Pizzimento FOR Angular-Express Project-->
+
+<div *ngIf="!isAuth()">
+  <h2>Autenticati per prenotare un'aula</h2>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">                                        
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+            </div>
+
+            <button type="submit" (click)="logIn()" class="btn btn-primary">Login</button>
+          </form>
+      </div>
+  </nav>
+</div>
+
+<div *ngIf="isAuth()">
+  <h2>Benvenuto! Prenota la tua aula</h2>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <form id="signin" class="navbar-form navbar-right" role="form">
+              <button type="submit" (click)="logOut()" class="btn btn-primary">Logout</button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<daypilot-scheduler [config]="config" [events]="events" #scheduler></daypilot-scheduler>

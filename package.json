@@ -1,40 +1,52 @@
 {
-    "name": "angular-express",
-    "version": "0.0.0",
-    "main": "app.js",
-    "license": "MIT",
-    "description": "Angular+Express App",
-    "author": {
-        "name": "nZo"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/vincex/angular-express.git"
-    },
-    "scripts": {
-        "install": "cd src-client && npm install",
-        "build-server": "tsc",
-        "build-client": "cd src-client && npm run build",
-        "build": "npm run build-server && npm run build-client",
-        "start-server-deb": "tsc && node dist/app.js",
-        "start-client-deb": "cd src-client && ng serve --open",
-        "start-debug": "npm run start-server-deb | npm run start-client-deb",
-        "start": "node dist/app.js"
-    },
-    "dependencies": {
-        "express": "~4.14.0",
-        "ejs": "~2.5.2",
-        "mongoose": "~4.13.1",
-        "passport": "~0.3.2",
-        "passport-local": "~1.0.0",
-        "connect-flash": "~0.1.1",
-        "bcrypt-nodejs": "latest",
-        "morgan": "~1.7.0",
-        "body-parser": "~1.15.2",
-        "method-override": "~2.3.6",
-        "express-session": "~1.14.1"
-    },
-    "devDependencies": {
-        "@types/express": "^4.11.1"
-    }
+  "name": "aulario-frontend",
+  "version": "0.0.0",
+  "license": "SEE LICENSE IN license/LicenseAgreement.pdf",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --proxy-config proxy.conf.json --open",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/router": "^5.0.0",
+    "core-js": "^2.4.1",
+    "daypilot-pro-angular": "https://npm.daypilot.org/daypilot-pro-angular/trial/2018.2.3297.tar.gz",
+    "rxjs": "^5.5.2",
+    "web-animations-js": "^2.3.1",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular-devkit/core": "0.0.29",
+    "@angular/cli": "1.5.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/language-service": "^5.0.0",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~4.0.0",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.1.2",
+    "ts-node": "~3.2.0",
+    "tslint": "~5.7.0",
+    "typescript": "~2.4.2"
+  }
 }

@@ -1,11 +1,31 @@
-# Angular-Express
+# Aulario Angular-Express Project
 
-Base project for an Angular application hosted by an express application
+This is an "Aulario" for Angular-Express project generated using [DayPilot UI Builder](https://builder.daypilot.org/).
 
-## Development server
+## Versions
 
-Run `ng start-debug` for a dev server. Navigate to `http://localhost:4200/`.
+This project is based on [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+
+This project includes a trial version of DayPilot Pro for JavaScript.
+
+## License
+
+This project is licensed for testing and evaluation purposes. Please see the license agreement in license/LicenseAgreementTrial.pdf. 
+
+You can use the the project if you are a licensed user of DayPilot Pro for JavaScript. [Buy a license](https://javascript.daypilot.org/buy/).
+
+## Project Initialization
+
+Run `npm install` to download all dependencies.
+
+## Running the Project
+
+Run `php.exe -S 127.0.0.1:8090 -t path\to\backend` to start the PHP server at port 8090. (Windows)
+
+Run `php -S 127.0.0.1:8090 -t path/to/backend` to start the PHP server at port 8090. (Linux)
+
+Run `npm run start` to start a development server at `http://localhost:4200/`.
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
